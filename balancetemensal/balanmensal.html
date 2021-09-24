@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" type="imagem/png" href="../menu/erp.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Balancete Mensal</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+		
+		<h1><a>Balancete Mensal</a></h1>
+		<form id="form_103799" class="appnitro"  method="post" action="">
+		<div class="form_description">
+			<h2>Balancete Mensal</h2></form><br/>
+											
+			<form method="POST" action="envia_balanmensal.php">
+				<label class="description" for="element_1">Insira aqui a Conta </label>
+				<input type=text required name='conta_balMensal' placeholder="15469" autofocus style='width:150px' value=''><br></br>
+				
+				<label class="description" for="element_2">Insira aqui o saldo inicial </label>
+				<input type=text required name='saldoInicial' placeholder="1000,00" autofocus style='width:150px' value=''><br></br>
+
+				<label class="description" for="element_3">Insira aqui o saldo final </label>
+				<input type=text required name='saldoFinal' placeholder="1200,00" autofocus style='width:150px' value=''><br></br>
+
+				<label class="description" for="element_4">Insira aqui o Crédito </label>
+				<input type=text required name='credito' placeholder="200,00" autofocus style='width:150px' value=''><br></br>
+
+				<label class="description" for="element_5">Insira aqui o Débito </label>
+				<input type=text required name='debito' placeholder="100,00" autofocus style='width:150px' value=''><br>
+			</br>
+				<label class="description" for="element_6">Insira aqui a Data  </label>
+				<input type=text required name='dataatual' placeholder="AAAAMMDD" autofocus style='width:150px' value=''><br></br>
+		<!--Action que envia os dados para a pagina envia_balanmensal.php-->
+		<form action="" method="" > 
+			<input type="submit" value='Gravar dados'/>
+		</form><br/><!--Action que envia os dados para a pagina envia_balanmensal.php-->
+		<form action="download_balanmensal.php" method=POST >
+			<input type="submit" value='Download txt'/>
+	    </form><br>
+		<form action="limpa.php" method=POST >
+			<input type="submit" value='Limpar dados'/>
+	    </form></br>
+		<form action="../menu/menu.html" method=POST >
+			<input type="submit" value='Voltar'/>
+	 	</form><br>
+		</form>	
+		<div id="footer">
+		<!--	<div style="text-align: right;">&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>   </div>-->
+			
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>

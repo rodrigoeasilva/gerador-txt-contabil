@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link rel="icon" type="imagem/png" href="../menu/erp.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Plano Geral de Contas</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Plano Geral de Contas</a></h1>
+		<!--Descrição dos campos onde serão inseridas as informações-->
+		<form id="form_103799" class="appnitro"  method="post" action="">
+		<div class="form_description">
+			<h2>Plano Geral de Contas</h2></form></br>
+
+			<form method="POST" action="envia_planogeral.php">
+				<label class="description" for="element_1">Insira aqui o Subcodigo do CNPJ </label>
+				<input type=text required name="subcodigoCNPJ" placeholder="teste" autofocus style='width:150px' value=''/><br></br>
+				
+				<label class="description" for="element_2">Insira aqui a conta </label>
+				<input type=text required name='conta' placeholder="teste" step="0.01" autofocus style='width:150px' value=''/><br></br>
+
+				<label class="description" for="element_3">Insira aqui a descrição </label>
+				<input type=text required name='descricao' placeholder="Pagamento de tributos" step="0.01"autofocus style='width:150px' value=''/><br></br>
+
+				<label class="description" for="element_4">Insira aqui o indicador de tributação </label>
+				<input type=text required name='indicadorTributacao' placeholder="S/N" step="0.01" autofocus style='width:150px' value=''><br></br>
+
+				<label class="description" for="element_5">Insira aqui o código de lei complementar </label>
+				<input type=text required name='codigoLeiComplementar' placeholder="10.15" step="0.01" autofocus style='width:150px' value=''/><br></br>
+		<!--Action que envia os dados para a pagina envia_planogeral.php-->		
+		<form action="" method="" >
+			<input type="submit" value='Gravar dados'/>
+		</form> <!--Action que envia os dados para a pagina envia_planogeral.php-->
+			</form><br><!--Descrição dos campos onde serão inseridas as informações-->
+			<form action="download_plangeral.php" method=POST >
+				<input type="submit" value='Download txt'/>
+		 </form><br>
+			<form action="limpa.php" method=POST >
+				<input type="submit" value='Limpar dados'/>
+		 </form><!--Action onde chama a função para criar o planogeral.txt -->
+			</br>
+		<form action="../menu/menu.html" method=POST >
+				<input type="submit" value='Voltar'/>
+		 </form><br>
+	 
+		<!--Action onde chama a função para criar o planogeral.txt-->		
+		
+		</form>	
+		<div id="footer">
+			<div style="text-align: right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>   </div>
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+	<!--lang="en"-->
+	</html>
